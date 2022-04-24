@@ -39,7 +39,7 @@ class Home extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index){
                       final Exercise exo = exos[index];
-                      return CardHome();
+                      return CardHome(exo);
                     },
                     itemCount: exos.length,
                   );
@@ -67,7 +67,7 @@ class Home extends StatelessWidget {
                             child: Icon(Icons.add, color: Colors.white),
                           ),
                         ),
-                        Title(color: Colors.white, child: Text("Créer", style: TextStyle(color: Colors.white, fontSize: 25),))
+                        Title(color: Colors.white, child: Text("Ajouter", style: TextStyle(color: Colors.white, fontSize: 25),))
                         
                       ],
                     ),

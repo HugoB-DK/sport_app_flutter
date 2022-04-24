@@ -18,21 +18,10 @@ class PreferencesRepository{
     for (var key in keys) {
       final json = prefs.getString(key) ?? '';
       Map<String, dynamic> map = jsonDecode(json);
-      final Exercise exo = new Exercise(map['id'], map['name'], map['muscle'], map['equipement'], map['images']);
+      final Exercise exo = new Exercise(map['id'], map['name'], map['muscle'], map['equipement'], []);
       exos.add(exo);
     }
 
-    // Exercise un = new Exercise(0, "TEST", "TEST", "TEST", []);
-
-    // exos.add(un);
-    // exos.add(Exercise.fromExoJson(json.decode(prefs.getString(key)!)));
-    // print(exos);
-    // List<String>? myExos = prefs.getStringList("exos");
-    // if(myExos != null){
-    //   for (var item in myExos) {
-    //     exos.add(Exercise.fromJson(item));
-    //   }
-    // } 
     return exos;
 
   }

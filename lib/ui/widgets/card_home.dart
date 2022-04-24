@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sport_app/models/exercise.dart';
 
 class CardHome extends StatelessWidget {
-  const CardHome({ Key? key }) : super(key: key);
+  final Exercise exo;
+  const CardHome(this.exo);
 
   @override
   Widget build(BuildContext context) {
@@ -49,8 +51,8 @@ class CardHome extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Title(color: Colors.white, child: Text('JAB AND STRAIGHT', style: TextStyle(fontSize: 20, color: Colors.white),)),
-                  Text('5 exercices', style: TextStyle(color: Colors.grey[350]),)
+                  Title(color: Colors.white, child: Text(exo.name ?? "Pas de nom", style: TextStyle(fontSize: 20, color: Colors.white),)),
+                  Text(exo.muscle ?? "Pas de catégorie", style: TextStyle(color: Colors.grey[350]),)
                 ],
               ),
             )

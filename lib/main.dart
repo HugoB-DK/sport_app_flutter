@@ -18,7 +18,7 @@ void main() async{
   
   final ExerciseCubit exerciseCubit = ExerciseCubit(repository);
   final MyExerciseCubit myExerciseCubit = MyExerciseCubit(repository);
-  //await myExerciseCubit.loadExo();
+  await myExerciseCubit.loadExo();
 
   runApp(
     MultiProvider(

@@ -10,17 +10,12 @@ class MyExerciseCubit extends Cubit<List<Exercise>>{
 
   void saveExo(Exercise exo){
     emit([...state, exo]);
-    print("state : " );
     print(exo);
-    print("FIN STATE");
     _repository.saveExercise(exo);  
   }
 
   Future<void> loadExo() async {
     final List<Exercise> exos = await _repository.loadExo();
-    print("------------------");
-    print(exos);
-    print("------------------");
     emit(exos);  
   }
 

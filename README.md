@@ -27,3 +27,8 @@ Une application donnant accès à un large panel d'exercices de musculation
  - Recherche par nom d'exercice
  - Tri par catégories
 3. Ecran de détails d'un exercice 
+
+
+# Troubleshooting
+
+- L'api est longue a renvoyer les données (Temps de chargement un peu long sur la page de recherche)
