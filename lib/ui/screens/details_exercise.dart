@@ -43,7 +43,7 @@ class _DetailsExerciseState extends State<DetailsExercise> {
             ),
           ),
           Title(color: Colors.white, child: Text("${myExo.name ?? "My exercise"}", style: TextStyle(color: Colors.white),)),
-          Image.network("https://medias.toutelanutrition.com/ressource/104/D%C3%A9clin%C3%A9%20halt%C3%A8res.jpg"),
+          Image.network("https://via.placeholder.com/300"),
           Container(
             padding: EdgeInsets.all(20),
             width: MediaQuery.of(context).size.width * 0.8,

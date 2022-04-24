@@ -31,7 +31,7 @@ class Exercise {
     return Exercise(id, name, muscle,equipement, images);
   }
   
-    String toJson(){
+  String toJson(){
     return jsonEncode({
       'id': id,
       'name': name,

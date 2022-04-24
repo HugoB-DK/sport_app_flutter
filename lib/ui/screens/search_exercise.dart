@@ -31,6 +31,7 @@ class _SearchExerciseState extends State<SearchExercise> {
     _repository.allExercises().then((value) {
       Provider.of<ExerciseCubit>(context,listen: false).allExercise = value;
       Provider.of<ExerciseCubit>(context,listen: false).searchByName("");
+      context.loaderOverlay.hide();
     setState(() {    
       liste = value;
     });});

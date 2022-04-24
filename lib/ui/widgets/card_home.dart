@@ -6,9 +6,6 @@ class CardHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.pushNamed(context, '/collection');
-      },
       child: Container(
         width: 250,
         margin: EdgeInsets.only(left: 15, right: 15),

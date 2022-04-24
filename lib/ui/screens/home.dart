@@ -77,27 +77,6 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: 'Collections',
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: 'Exercises',
-            icon: Icon(Icons.home),
-          )
-        ]
-      ),
     );
   }
 }
-
-/**
- * 
- * SNACK BAR
- */

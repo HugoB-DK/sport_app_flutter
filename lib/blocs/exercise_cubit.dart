@@ -7,9 +7,9 @@ class ExerciseCubit extends Cubit<List<Exercise>>{
   List<Exercise> allExercise = [];
 
   ExerciseCubit(this._repository) : super([]){
-    _repository.allExercises().then((value){
-      allExercise = value;
-    });
+    // _repository.allExercises().then((value){
+    //   allExercise = value;
+    // });
   }
 
   void searchByName(String value){
@@ -27,21 +27,5 @@ class ExerciseCubit extends Cubit<List<Exercise>>{
       emit(allExercise.where((element) => element.muscle!.toLowerCase().contains(value.toLowerCase())).toList());
     }
   }
-
-  // void saveExo(Exercise exo){
-  //   emit([...state, exo]);
-  //   print("state : " );
-  //   print(exo);
-  //   print("FIN STATE");
-  //   _repository.saveExercise(exo);  
-  // }
-
-  // Future<void> loadExo() async {
-  //   final List<Exercise> exos = await _repository.loadExo();
-  //   print("------------------");
-  //   print(exos);
-  //   print("------------------");
-  //   emit(exos);  
-  // }
 
 }
